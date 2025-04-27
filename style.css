@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+     background: linear-gradient(90deg, rgba(123, 74, 123, 1) 0%, rgba(62, 80, 108, 1) 100%);
+     width: 100vw;
+     height: 100vh;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.heading{
+    color: white;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.displaycontainer{
+    background-color:rgb(54, 42, 68);
+    position: relative;
+    width: 100%;
+    padding: 0.4rem;
+    
+    display: flex;
+    align-content: center;
+    border-radius: 0.3rem;
+    box-shadow: 0px 5px;
+    justify-content: space-between;
+}
+.input{
+    background: none;
+    border: none;
+    font-size: large;
+    color: rgb(153, 153, 47);
+
+}
+.input::placeholder{
+    color: rgb(153, 153, 47);
+    font-size: large;
+}
+
+.butt{
+    display: flex;
+    height: 100%;
+    border: none;
+   background: transparent;
+}
+.inputcontainer{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 0.6rem;
+   height: 100%;
+   background-color:rgb(54, 42, 68);
+   padding: 0.5rem;
+   padding-bottom: 1rem;
+   border-radius: 0.3rem;
+
+}
+.lenghtcont{
+    display: flex;
+    justify-content: space-between;
+}
+.lenghtcont:nth-child(1){
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.lenghtcont .para{
+    color: rgb(153, 153, 47);
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    color: white;
+  gap: 0.3rem;
+}
+.label1{
+    border: 1px solid aqua;
+}
+.strenght-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+.indicator{
+    width: 20px;
+    height: 20px;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    background-color: grey;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px;
+    
+}
+.generatepassward{
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.3rem;
+    border: none;
+    padding-top: 0.6rem;
+    box-shadow: 0px 5px black;
+    color: white;
+    background-color: blueviolet;
+    
+    text-transform: capitalize;
+    font-weight: 600;
+    
+}
+.sp{
+    opacity: 0;
+    position: absolute;
+    top: -22px;
+    right: 0px;
+    background-color: blueviolet;
+    color:  rgb(212, 212, 66);
+    padding: 0.3rem 0.7rem;
+    font-size: 0.9rem;
+    transition: all 200ms ease-in;
+    border-radius: 0.7rem;
+}
+.sp.active{
+    opacity: 1;
+}
